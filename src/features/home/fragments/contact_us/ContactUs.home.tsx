@@ -18,7 +18,8 @@ import TextArea from "@/core/ui/components/textarea/Textarea.component";
 import { useForm as useFormFormSpree } from "@formspree/react";
 import { getErrorsDictionaries } from "@/core/dictionaries/errors";
 import ContactUsNotificationDialogHome from "../../components/contact_us_notification_dialog/ContactUsNotificationDialog.home";
-// import { useNavigationStore } from "@/core/zustand/navigation/store";
+import { useNavigationStore } from "@/core/zustand/navigation/store";
+import { useIntersectionObserver } from "@/core/utils/hooks/useIntersectionObserver";
 
 export interface ContactUsHomeProps {}
 
@@ -39,17 +40,16 @@ export default function ContactUsHome(_: ContactUsHomeProps) {
   const dict = useHomeDictionaries().dict.contact_us;
   const errorDictionaries = getErrorsDictionaries("en");
 
-  // const navigationStore = useNavigationStore();
-  // const { isIntersecting, ref } = useIntersectionObserver({
-  //   delay: 2000,
-  //   threshold:0.6
-  // });
+  const navigationStore = useNavigationStore();
+  const { isIntersecting, ref } = useIntersectionObserver({
+    delay: 2000,
+  });
 
-  // React.useEffect(() => {
-  //   if (isIntersecting) {
-  //     navigationStore.setIDNavigation("#contact-us");
-  //   }
-  // }, [isIntersecting]);
+  React.useEffect(() => {
+    if (isIntersecting) {
+      navigationStore.setInspectionIDNavigation("#contact-us");
+    }
+  }, [isIntersecting]);
 
   const handleChangeName = (e: React.ChangeEvent<HTMLInputElement>) => {
     setValue(FULLNAME_CONTACT_US_FORM_HOME, e.currentTarget.value);
@@ -118,11 +118,7 @@ export default function ContactUsHome(_: ContactUsHomeProps) {
   };
 
   return (
-    <div
-      // ref={ref}
-      id={"contact-us"}
-      className={clsx("w-full")}
-    >
+    <div ref={ref} id={"contact-us"} className={clsx("w-full")}>
       <Section>
         <ContentSection>
           <div

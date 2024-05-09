@@ -7,6 +7,7 @@ import ContentSection from "@/core/ui/components/content_section/ContentSection.
 import Section from "@/core/ui/components/section/Section.component";
 import { useNavigationStore } from "@/core/zustand/navigation/store";
 import { useNavigate } from "react-router-dom";
+import { useIntersectionObserver } from "@/core/utils/hooks/useIntersectionObserver";
 
 export interface AboutUsHomeProps {}
 
@@ -16,20 +17,20 @@ export default function AboutUsHome(_: AboutUsHomeProps) {
   const navigationStore = useNavigationStore();
   const handleClickAboutUs = (e: React.MouseEvent<HTMLButtonElement>) => {
     navigationStore.setIDNavigation("#about-us");
+    navigationStore.setInspectionIDNavigation("#about-us");
     navigate(e.currentTarget.value);
     e.preventDefault();
   };
 
-  // const { isIntersecting, ref } = useIntersectionObserver({
-  //   delay: 2000,
-  //   threshold: 0.5,
-  // });
+  const { isIntersecting, ref } = useIntersectionObserver({
+    delay: 2000,
+  });
 
-  // React.useEffect(() => {
-  //   if (isIntersecting) {
-  //     navigationStore.setIDNavigation("#about-us");
-  //   }
-  // }, [isIntersecting]);
+  React.useEffect(() => {
+    if (isIntersecting) {
+      navigationStore.setInspectionIDNavigation("#about-us");
+    }
+  }, [isIntersecting]);
 
   return (
     <div id={"about-us"} className={clsx("w-full")}>
@@ -44,7 +45,7 @@ export default function AboutUsHome(_: AboutUsHomeProps) {
           >
             {/* headline */}
             <div
-              // ref={ref}
+              ref={ref}
               className={clsx(
                 "grid grid-cols-1 place-content-start place-items-start gap-y-[1.25rem]",
                 "w-full"

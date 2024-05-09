@@ -1,25 +1,28 @@
+import * as React from "react";
 import clsx from "clsx";
 import { useHomeDictionaries } from "../../zustand/dictionaries/store";
 import PartnerCardHome from "../../components/partner_card/PartnerCard.home";
 import Section from "@/core/ui/components/section/Section.component";
 import ContentSection from "@/core/ui/components/content_section/ContentSection.component";
+import { useNavigationStore } from "@/core/zustand/navigation/store";
+import { useIntersectionObserver } from "@/core/utils/hooks/useIntersectionObserver";
 // import { useNavigationStore } from "@/core/zustand/navigation/store";
 
 export interface PartnersHomeProps {}
 
 export default function PartnersHome(_: PartnersHomeProps) {
   const dict = useHomeDictionaries.getState().dict.partner;
-  // const navigationStore = useNavigationStore();
-  // const { isIntersecting, ref } = useIntersectionObserver({
-  //   delay: 2000,
-  //   threshold: 0.5,
-  // });
+  const navigationStore = useNavigationStore();
+  const { isIntersecting, ref } = useIntersectionObserver({
+    delay: 2000,
+    threshold: 0.5,
+  });
 
-  // React.useEffect(() => {
-  //   if (isIntersecting) {
-  //     navigationStore.setIDNavigation("#partners");
-  //   }
-  // }, [isIntersecting]);
+  React.useEffect(() => {
+    if (isIntersecting) {
+      navigationStore.setInspectionIDNavigation("#partners");
+    }
+  }, [isIntersecting]);
   return (
     <div id={"partners"} className={clsx("w-full")}>
       <Section>
@@ -39,7 +42,7 @@ export default function PartnersHome(_: PartnersHomeProps) {
               )}
             >
               <h4
-                // ref={ref}
+                ref={ref}
                 className={clsx(
                   "text-[1rem] leading-[1.5rem] md:text-[1.125rem] md:leading-[2rem] text-raisin-black font-light uppercase tracking-[0.3rem] whitespace-nowrap"
                 )}

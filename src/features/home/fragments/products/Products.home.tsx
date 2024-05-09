@@ -8,6 +8,7 @@ import Section from "@/core/ui/components/section/Section.component";
 import ContentSection from "@/core/ui/components/content_section/ContentSection.component";
 import { useNavigationStore } from "@/core/zustand/navigation/store";
 import { useNavigate } from "react-router-dom";
+import { useIntersectionObserver } from "@/core/utils/hooks/useIntersectionObserver";
 
 export interface ProductsHomeProps {}
 
@@ -17,19 +18,20 @@ export default function ProductsHome(_: ProductsHomeProps) {
   const navigationStore = useNavigationStore();
   const handleClickProduct = (e: React.MouseEvent<HTMLButtonElement>) => {
     navigationStore.setIDNavigation("#products");
+    navigationStore.setInspectionIDNavigation("#products");
     navigate(e.currentTarget.value);
     e.preventDefault();
   };
 
-  // const { isIntersecting, ref } = useIntersectionObserver({
-  //   delay: 2000,
-  // });
+  const { isIntersecting, ref } = useIntersectionObserver({
+    delay: 2000,
+  });
 
-  // React.useEffect(() => {
-  //   if (isIntersecting) {
-  //     navigationStore.setIDNavigation("#products");
-  //   }
-  // }, [isIntersecting]);
+  React.useEffect(() => {
+    if (isIntersecting) {
+      navigationStore.setInspectionIDNavigation("#products");
+    }
+  }, [isIntersecting]);
 
   return (
     <div id={"products"} className={clsx("w-full")}>
@@ -54,7 +56,7 @@ export default function ProductsHome(_: ProductsHomeProps) {
                 )}
               >
                 <h4
-                  // ref={ref}
+                  ref={ref}
                   className={clsx(
                     "text-[1rem] leading-[1.5rem] md:text-[1.125rem] md:leading-[2rem] text-raisin-black font-normal uppercase tracking-[0.3rem]"
                   )}

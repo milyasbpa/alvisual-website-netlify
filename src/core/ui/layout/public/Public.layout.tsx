@@ -37,28 +37,24 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
   useEffect(() => {
     if (!!navigationStore.id.length) {
       navigationStore.setIDNavigation(navigationStore.id as any);
+      navigationStore.setInspectionIDNavigation(navigationStore.id as any);
       scrollToAnchor(navigationStore.id);
     }
   }, [navigationStore.id]);
 
   useEffect(() => {
-    // if (location.pathname === "/" && !navigationStore.id.length) {
-    //   navigationStore.setIDNavigation("#hero");
-    // }
-    if ("scrollRestoration" in history) {
-      // Back off, browser, I got this...
-      history.scrollRestoration = "manual";
+    if (location.pathname === "/" && !navigationStore.id.length) {
+      navigationStore.setInspectionIDNavigation("#hero");
     }
     if (location.pathname === "/teams") {
-      navigationStore.setIDNavigation("#about-us");
+      navigationStore.setInspectionIDNavigation("#about-us");
     }
     if (location.pathname.includes("/products")) {
-      navigationStore.setIDNavigation("#products");
+      navigationStore.setInspectionIDNavigation("#products");
     }
     if (location.pathname === "/download") {
-      navigationStore.setIDNavigation("#support");
+      navigationStore.setInspectionIDNavigation("#support");
     }
-    console.log(navigationStore.id, "ini navigation store id");
   }, []);
 
   const handleClickNavbar = (data: {
@@ -70,14 +66,17 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
   }) => {
     if (data.link.includes("/")) {
       navigationStore.setIDNavigation(data.tag as any);
+      navigationStore.setInspectionIDNavigation("#support");
       navigate(data.link);
       return;
     }
     if (location.pathname === "/" && data.link.includes("#")) {
       navigationStore.setIDNavigation(data.link as any);
+      navigationStore.setInspectionIDNavigation(data.link as any);
     }
     if (location.pathname !== "/" && data.link.includes("#")) {
       navigationStore.setIDNavigation(data.link as any);
+      navigationStore.setInspectionIDNavigation(data.link as any);
       navigate(defaultLink);
     }
   };
@@ -90,14 +89,17 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
   }) => {
     if (data.link.includes("/")) {
       navigationStore.setIDNavigation(data.tag as any);
+      navigationStore.setInspectionIDNavigation("#support");
       navigate(data.link);
       return;
     }
     if (location.pathname === "/" && data.link.includes("#")) {
       navigationStore.setIDNavigation(data.link as any);
+      navigationStore.setInspectionIDNavigation(data.link as any);
     }
     if (location.pathname !== "/" && data.link.includes("#")) {
       navigationStore.setIDNavigation(data.link as any);
+      navigationStore.setInspectionIDNavigation(data.link as any);
       navigate(defaultLink);
     }
   };
@@ -105,7 +107,7 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
   return (
     <main className={clsx("w-full")}>
       <Navbar
-        activeTargetID={navigationStore.id}
+        activeTargetID={navigationStore.inspectionID}
         list={menu.list}
         onClick={handleClickNavbar}
       />
@@ -114,7 +116,7 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
         company={company}
         link={{
           ...menu,
-          activeTargetID: navigationStore.id,
+          activeTargetID: navigationStore.inspectionID,
           onClick: handleClickFooter,
         }}
         contact={contact}

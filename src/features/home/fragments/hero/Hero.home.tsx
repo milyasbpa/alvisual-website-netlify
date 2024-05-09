@@ -7,6 +7,7 @@ import ContentSection from "@/core/ui/components/content_section/ContentSection.
 
 import StatisticNumber from "../../components/statistic_number/StatisticNumber.home";
 import { useNavigationStore } from "@/core/zustand/navigation/store";
+import { useIntersectionObserver } from "@/core/utils/hooks/useIntersectionObserver";
 
 export interface HeroHomeProps {}
 
@@ -38,16 +39,15 @@ export default function HeroHome(_: HeroHomeProps) {
     );
   };
 
-  // const { isIntersecting, ref } = useIntersectionObserver({
-  //   delay: 2000,
-  //   threshold: 0.5,
-  // });
+  const { isIntersecting, ref } = useIntersectionObserver({
+    delay: 2000,
+  });
 
-  // React.useEffect(() => {
-  //   if (isIntersecting) {
-  //     navigationStore.setIDNavigation("#hero");
-  //   }
-  // }, [isIntersecting]);
+  React.useEffect(() => {
+    if (isIntersecting) {
+      navigationStore.setInspectionIDNavigation("#hero");
+    }
+  }, [isIntersecting]);
   return (
     <div id={"hero"} className={clsx("w-full", "py-[72px] sm:py-[5.5rem]")}>
       <Section>
@@ -65,7 +65,7 @@ export default function HeroHome(_: HeroHomeProps) {
               )}
             >
               <h1
-                // ref={ref}
+                ref={ref}
                 className={clsx(
                   "text-[2.5rem] leading-[3.375rem] md:text-[52px] md:leading-[60px] lg:text-[3rem] lg:leading-[4rem] font-bold text-eerie-black text-center"
                 )}
