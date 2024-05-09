@@ -88,7 +88,7 @@ export default function ContentDownload(_: ContentDownloadProps) {
             }
             const link = (cellProps.row.getValue(item.id) as string).replace(
               "{{domain}}",
-              process.env.NEXT_PUBLIC_SITE_URL ?? ""
+              import.meta.env.VITE_PUBLIC_SITE_URL ?? ""
             );
             return (
               <div
@@ -225,7 +225,7 @@ export default function ContentDownload(_: ContentDownloadProps) {
           if (item.id === "link") {
             const link = (cellProps.row.getValue(item.id) as string).replace(
               "{{domain}}",
-              process.env.NEXT_PUBLIC_SITE_URL ?? ""
+              import.meta.env.VITE_PUBLIC_SITE_URL ?? ""
             );
             return (
               <div
