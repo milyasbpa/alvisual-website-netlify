@@ -1,14 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "@/App";
-import AboutUs from "@/AboutUs";
+import HomePage from "@/features/home/page/Home.page";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <HomePage />,
   },
   {
     path: "/about-us",
-    element: <AboutUs />,
+    element: <h1 className="text-lime-600" >hallo</h1>,
   },
 ]);

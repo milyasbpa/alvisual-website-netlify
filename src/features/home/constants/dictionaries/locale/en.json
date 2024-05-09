@@ -1,0 +1,151 @@
+{
+  "hero": {
+    "motto": {
+      "instant": "Instant",
+      "intelligent": "Intelligent",
+      "incredible": "Incredible"
+    },
+    "description": "Embrace the future of healthcare with Alvisual.",
+    "cta": {
+      "primary": {
+        "link": "#products",
+        "text": "Explore Products"
+      },
+      "secondary": {
+        "link": "#contact-us",
+        "text": "Request A Demo"
+      }
+    }
+  },
+  "about_us": {
+    "pre": "About us",
+    "headline": "Make every health decision intelligent",
+    "subline": "Our goal at Alvisual Pte Ltd is to unlock the unlimited potential of AI to transform the health industry and create tangible improvements in people’s lives. By harnessing advanced machine-learning algorithms and data-processing techniques, we craft scalable solutions that augment human capabilities, supercharge operational efficiency, and drive business growth. Through our innovation, traditional wellness services can be elevated to an unprecedented level of standardization. This means that every customer, irrespective of when and where they are, has access to expert-level care with unwavering quality.",
+    "cta": {
+      "primary": {
+        "link": "/teams",
+        "text": "Meet our team"
+      }
+    }
+  },
+  "product": {
+    "pre": "Products",
+    "headline": "Experience the next generation of personalized wellness, optimized for you",
+    "subline": "Introducing TrichoTrack™ and MagicMirror™ - our revolutionary suite of products designed to reshape the landscape of personal care. Powered by cutting-edge AI and cloud technologies, these innovative applications provide precise and comprehensive assessment, as well as constant supervision of your scalp and facial skin health. Beyond that, they also deliver customized management strategies tailored to your unique needs. With TrichoTrack™ and MagicMirror™, personal care becomes an intelligent, proactive, and informed experience.",
+    "values": [
+      {
+        "id": "Understandable AI",
+        "image": "/images/home/aspect/understandable_ai.image.png",
+        "name": "Understandable AI",
+        "description": "Unlike other 'black-box' solutions, our AI models not only make accurate diagnoses but also can explain their reasoning in a way that you can understand, ensuring the decision-making process is reasonable, justifiable, and reliable."
+      },
+      {
+        "id": "Human-centred Design",
+        "image": "/images/home/aspect/human_centered_design.image.png",
+        "name": "Human-centred Design",
+        "description": "By considering the distinct characteristics of every user, including age, gender, and ethnicity, throughout the design process, our products not only cater to your specific interaction preferences but also mitigate the impact of diagnostic bias."
+      },
+      {
+        "id": "Ubiquitous Access",
+        "image": "/images/home/aspect/ubiquitous_access.image.png",
+        "name": "Ubiquitous Access",
+        "description": "Leveraging cloud technologies, our solutions offer hassle-free integration into your existing systems. Unlock the industry-leading AI capabilities with a simple Internet connection and enjoy seamless access to the finest AI services anytime, anywhere."
+      }
+    ],
+    "products": [
+      {
+        "id": "TrichoTrack",
+        "illustration": "/videos/home/products/tricho_track.video.mov",
+        "launch_type": "Launched",
+        "launch_type_icon": "/icons/product-type/launched.icon.png",
+        "name": "TrichoTrack",
+        "headline": "Singapore’s 1st trichology AI. Your path to optimal scalp and hair health begins here.",
+        "description": "Presenting TrichoTrack™, your personal trichology solution offering micrometre precision in every examination. Each TrichoTrack™ session includes 4 to 8 microscopic scans of ...",
+        "cta": {
+          "primary": {
+            "name": "Read More",
+            "link": "/products/tricho-track"
+          }
+        }
+      },
+      {
+        "id": "MagicMirror",
+        "illustration": "/images/home/products/magic_mirror.image.png",
+        "launch_type": "Beta Release",
+        "launch_type_icon": "/icons/product-type/fast-forward.icon.png",
+        "name": "MagicMirror",
+        "headline": "Your personal portal to flawless skin.",
+        "description": "Welcome to MagicMirror™, your personalized facial skincare ally. Each session with MagicMirror™ is a comprehensive journey into your skin health, leveraging high-resolution scans of your frontal and side profiles across four distinct lighting conditions ...",
+        "cta": {
+          "primary": {
+            "name": "Read More",
+            "link": "/products/magic-mirror"
+          }
+        }
+      }
+    ]
+  },
+  "partner": {
+    "pre": "Our Partners",
+    "headline": "Visit our valued partners",
+    "list": [
+      {
+        "id": "Dr Scalp",
+        "image": "/logo/dr_scalp.logo.png",
+        "site": "https://drscalp.com.sg/"
+      },
+      {
+        "id": "Tricho Med",
+        "image": "/logo/tricho_med.logo.png",
+        "site": "https://www.trichomed.com.sg/"
+      }
+    ]
+  },
+  "contact_us": {
+    "pre": "Contact Us",
+    "headline": "We'd love to hear from you",
+    "form": {
+      "full_name": {
+        "label": "Name",
+        "placeholder": "Type your name here..."
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Type your email here..."
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "Type your subject here..."
+      },
+      "phone_number": {
+        "label": "Phone Number",
+        "placeholder": "Type your phone number here..."
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Message here..."
+      }
+    },
+    "cta": {
+      "primary": "Send"
+    },
+    "notifications": {
+      "upload_success": {
+        "message": "Your request has been sent",
+        "description": "Please wait until you got reply from us",
+        "icon": "/icons/contact-us/success.icon.png",
+        "cta": {
+          "primary": "Close"
+        }
+      },
+      "upload_failed": {
+        "message": "Failed to sent your request",
+        "description": "Please try again to sent the request",
+        "icon": "/icons/contact-us/error.icon.png",
+        "cta": {
+          "primary": "Try Again"
+        }
+      }
+    }
+  }
+}

@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@headlessui/react": "^2.0.3",
     "@tanstack/react-table": "^8.16.0",
     "clsx": "^2.1.1",
@@ -17,6 +18,7 @@
     "match-sorter": "^6.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.4",
     "react-router-dom": "^6.23.0",
     "react-zoom-pan-pinch": "^3.4.4",
     "sort-by": "^0.0.2",
