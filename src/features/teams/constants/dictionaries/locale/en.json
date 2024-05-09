@@ -1,0 +1,71 @@
+{
+  "banner": {
+    "image": "/images/teams/background.image.png",
+    "alt": "meet-our-team"
+  },
+  "breadcrumb": [
+    {
+      "id": "about-us",
+      "name": "About Us",
+      "link": "/",
+      "disabled": false
+    },
+    {
+      "id": "Meet Our Team",
+      "name": "Meet Our Team",
+      "link": "",
+      "disabled": true
+    }
+  ],
+  "team": {
+    "headline": "Meet Our Team",
+    "subline": "We are a dynamic team, united by passion and supported by expertise, relentlessly challenging the boundaries of the impossible.",
+    "description": "The founder and CEO of Alvisual Pte Ltd, Dr. Leng Yusong, holds a PhD in Artificial Intelligence and Computer Vision, conferred upon him by the National University of Singapore in 2020. Beyond his academic knowledge, Dr. Yusong is a practised entrepreneur as well, having successfully co-founded HiCura Medical Pte Ltd amidst his doctoral pursuits. Serving as the former CTO of HiCura Medical, Dr. Yusong was instrumental in the development of uSINE®, a pioneering AI software that stands as the world's premier solution capable of automatically identifying spinal anatomical landmarks from ultrasound scans in real time. At Alvisual, he continues to advance, riding the crest of innovation.",
+    "founders": [
+      {
+        "id": "0",
+        "name": "Dr Leng Yusong",
+        "role": "Co-Founder, CEO",
+        "photo": "/images/teams/founder/yusong.png",
+        "description": "The founder and CEO of Alvisual Pte Ltd, Dr. Leng Yusong, holds a PhD in Artificial Intelligence and Computer Vision, conferred upon him by the National University of Singapore in 2020. Beyond his academic knowledge, Dr. Yusong is a practised entrepreneur as well, having successfully co-founded HiCura Medical Pte Ltd amidst his doctoral pursuits. Serving as the former CTO of HiCura Medical, Dr. Yusong was instrumental in the development of uSINE®, a pioneering AI software that stands as the world's premier solution capable of automatically identifying spinal anatomical landmarks from ultrasound scans in real time. At Alvisual, he continues to advance, riding the crest of innovation."
+      },
+      {
+        "id": "1",
+        "name": "Dr Victor Kwan",
+        "role": "Co-Founder",
+        "photo": "/images/teams/founder/victor.png",
+        "description": "Dr Victor Kwan has been in the automotive industry for over 20 years, with his latest position as Regional Managing Director of luxury brands such as Bentley, Aston Martin and Bugatti. Throughout his career, he has navigated diverse complexities to build up several brands that cut across all market segments – from mass to premium to luxury – while achieving record performances and garnering regional awards. Currently, he is excited to take on fresh challenges and opportunities brought about by technological advancements. The ambition to integrate practice experience with robust academic research led Victor to complete a PhD in Business with Singapore Management University. His research interests lie in word-of-mouth marketing on social media and luxury brand management."
+      }
+    ],
+    "employees": [
+      {
+        "id": "0",
+        "name": "Liu Xiaoxing",
+        "role": "Backend Developer",
+        "photo": "/images/teams/employee/liu_xiaoxing.png",
+        "description": ""
+      },
+      {
+        "id": "1",
+        "name": "Ilyas Bashirah",
+        "role": "Frontend Developer",
+        "photo": "/images/teams/employee/ilyas_bashirah.png",
+        "description": ""
+      },
+      {
+        "id": "2",
+        "name": "Liu Zhaoyang",
+        "role": "AI Developer",
+        "photo": "/images/teams/employee/liu_zhaoyang_5.jpeg",
+        "description": ""
+      },
+      {
+        "id": "3",
+        "name": "Zi Min ER",
+        "role": "AI Developer",
+        "photo": "/images/teams/employee/zi_min_2.jpeg",
+        "description": ""
+      }
+    ]
+  }
+}

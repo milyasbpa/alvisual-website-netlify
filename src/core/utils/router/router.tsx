@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import HomePage from "@/features/home/page/Home.page";
+import TeamsPage from "@/features/teams/page/Teams.page";
 
 export const router = createBrowserRouter([
   {
@@ -7,7 +8,7 @@ export const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
-    path: "/about-us",
-    element: <h1 className="text-lime-600" >hallo</h1>,
+    path: "/teams",
+    element: <TeamsPage />,
   },
 ]);

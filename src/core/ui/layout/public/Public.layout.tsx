@@ -1,4 +1,3 @@
-"use client";
 import { useEffect } from "react";
 import clsx from "clsx";
 import Navbar from "../../components/navbar/Navbar.component";

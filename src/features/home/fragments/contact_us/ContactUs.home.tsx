@@ -1,4 +1,3 @@
-"use client";
 import ContentSection from "@/core/ui/components/content_section/ContentSection.component";
 import Section from "@/core/ui/components/section/Section.component";
 import React from "react";

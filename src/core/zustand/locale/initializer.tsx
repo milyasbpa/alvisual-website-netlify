@@ -1,5 +1,3 @@
-"use client";
-
 import { useRef } from "react";
 
 import { LocaleStore, useLocaleStore } from "./store";
