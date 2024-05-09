@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import HomePage from "@/features/home/page/Home.page";
 import TeamsPage from "@/features/teams/page/Teams.page";
+import MagicMirrorPage from "@/features/products/magic_mirror/page/MagicMirror.product.page";
+import TrichoTrackPage from "@/features/products/tricho_track/page/Trichotrack.product.page";
 
 export const router = createBrowserRouter([
   {
@@ -10,5 +12,13 @@ export const router = createBrowserRouter([
   {
     path: "/teams",
     element: <TeamsPage />,
+  },
+  {
+    path: "/products/magic-mirror",
+    element: <MagicMirrorPage />,
+  },
+  {
+    path: "/products/tricho-track",
+    element: <TrichoTrackPage />,
   },
 ]);

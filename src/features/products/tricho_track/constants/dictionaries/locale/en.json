@@ -1,0 +1,129 @@
+{
+  "banner": {
+    "image": "/images/tricho-track/background-new.image.png",
+    "alt": "tricho-track"
+  },
+  "breadcrumb": [
+    {
+      "id": "products",
+      "name": "Products",
+      "link": "/",
+      "disabled": false
+    },
+    {
+      "id": "TrichoTrack",
+      "name": "TrichoTrack",
+      "link": "",
+      "disabled": true
+    }
+  ],
+  "overview": {
+    "pre": "Overview",
+    "headline": "TrichoTrack",
+    "name": "TrichoTrack™",
+    "subline": "Singapore’s 1st trichology AI. Your path to optimal scalp and hair health begins here.",
+    "description": "Presenting TrichoTrack™, your personal trichology solution offering micrometre precision in every examination.\n{{solutions}}\nThinking as a human, TrichoTrack™ diagnoses scalp in a manner that respects the professional wisdom of trichologists.\n{{principles}}",
+    "image": "/images/tricho-track/tricho-track.image.png",
+    "solutions": [
+      {
+        "video": "/videos/tricho-track/slide-1/P1-S1.mp4",
+        "text": "Each TrichoTrack™ session includes 4 to 8 microscopic scans of your scalp, strategically sampled from 4 standard regions towards a statistical representation of your overall scalp condition, and complemented with up to 4 custom regions based on individual needs. This dual approach assures a holistic diagnosis while providing bespoke attention to your specific areas of concern."
+      },
+      {
+        "video": "/videos/tricho-track/slide-1/P1-S2.mp4",
+        "text": "Upon the scans, our proprietary AI evaluates your scalp health from five essential aspects, each pinpointing a common scalp issue:\n{{issues}}\nBeyond that, TrichoTrack™ quantifies 14 vital scalp biometrics such as hair density and follicle capacity. All this invaluable data is securely stored in the cloud and can be effortlessly accessed, enabling you to easily track changes over time and make informed wellness decisions."
+      },
+      {
+        "video": "/videos/tricho-track/slide-1/P1-S3.mp4",
+        "text": "To bring full-circle service, TrichoTrack™ also provides tailored treatment plans and product recommendations based on your diagnostic results. With TrichoTrack™, the future of scalp care is in your hands. We're with you every step of the way, measuring, monitoring, and managing your scalp health with unmatched precision."
+      }
+    ],
+
+    "issues": [
+      {
+        "id": "hair_volume",
+        "name": "Hair Volume",
+        "description": "a metric of hair loss"
+      },
+      {
+        "id": "hair_vitality",
+        "name": "Hair Vitality",
+        "description": "an indicator of hair ageing"
+      },
+      {
+        "id": "scalp_resilience",
+        "name": "Scalp Resilience​",
+        "description": "a measure of sensitive scalp issues​"
+      },
+      {
+        "id": "scalp_balance",
+        "name": "Scalp Balance​",
+        "description": "a scale for oily scalp conditions"
+      },
+      {
+        "id": "scalp_cleanse",
+        "name": "Scalp Cleanse​",
+        "description": "a marker for dandruff presence​"
+      }
+    ],
+    "principles": [
+      {
+        "video": "/videos/tricho-track/slide-2/P2-S1.mp4",
+        "text": "TrichoTrack™ strategically employed deep learning models exclusively for detecting observable features such as hair strands, follicles, scalp textures, pimples, and dandruff. These are evident characteristics that customers can easily validate with the naked eye, thus instilling a sense of transparency and trust in our AI’s assessments."
+      },
+      {
+        "video": "/videos/tricho-track/slide-2/P2-S2.mp4",
+        "text": "TrichoTrack™ further integrated an expert system that encapsulates professional trichology knowledge to mirror the diagnostic process of trichologists. Similar to how a hair and scalp specialist utilizes the visible factors to form a diagnosis — like using hair or follicle density as an indication of hair volume — our AI does the same."
+      },
+      {
+        "video": "/videos/tricho-track/slide-2/P2-S3.mp4",
+        "text": "Experience precise progress tracking with TrichoTrack™. Historical results can be effortlessly accessed and compared with a simple tap, offering detailed insights into your scalp health journey."
+      }
+    ]
+  },
+  "architecture": {
+    "pre": "Architecture",
+    "image": "/images/tricho-track/architecture.image.png"
+  },
+  "version": {
+    "title": "Version",
+    "description": "TrichoTrack is now available in two tailored versions to better match our clients' diverse requirements.",
+    "items": [
+      {
+        "name": "TrichoTrack Pro",
+        "description": "This premium version includes high-grade digital microscopes, offering unparalleled detail of scalp features. It features convenient on-device image capture buttons and supports wireless connectivity for seamless operation.",
+        "image": "/images/tricho-track/tricho-track-pro.image.png"
+      },
+      {
+        "name": "TrichoTrack Lite",
+        "description": "For cost-effective scalability, the Lite version is equipped with a quality digital microscope at just 10% of the Pro version's cost, delivering reliable performance without compromising on the essentials.",
+        "image": "/images/tricho-track/tricho-track-lite.image.png"
+      }
+    ]
+  },
+  "glimpse": {
+    "pre": "Glimpse",
+    "list": [
+      {
+        "id": "routine",
+        "image": "/images/tricho-track/glimpse/routine.image.png"
+      },
+      {
+        "id": "scan-detail",
+        "image": "/images/tricho-track/glimpse/scan-detail.image.png"
+      },
+      {
+        "id": "diagnosis",
+        "image": "/images/tricho-track/glimpse/diagnosis.image.png"
+      },
+      {
+        "id": "comparison",
+        "image": "/images/tricho-track/glimpse/comparison.image.png"
+      },
+      {
+        "id": "recommendation",
+        "image": "/images/tricho-track/glimpse/recommendation.image.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "banner": {
+    "image": "/images/magic-mirror/background-new.image.png",
+    "alt": "magic-mirror"
+  },
+  "breadcrumb": [
+    {
+      "id": "products",
+      "name": "Products",
+      "link": "/",
+      "disabled": false
+    },
+    {
+      "id": "Magic Mirror",
+      "name": "MagicMirror",
+      "link": "",
+      "disabled": true
+    }
+  ],
+  "overview": {
+    "pre": "Overview",
+    "headline": "MagicMirror",
+    "subline": "Your personal portal to flawless skin.",
+    "description": "Welcome to MagicMirror™, your personalized facial skincare ally. Each session with MagicMirror™ is a comprehensive journey into your skin health, leveraging high-resolution scans of your frontal and side profiles across four distinct lighting conditions:\n{{conditions}}\nEffortless and user-centric, MagicMirror™ streamlines the entire scanning process with an intelligent capturing system that responds to eye closure and head gestures, ensuring a seamless, hands-off multispectral scanning experience.\nUpon the scans, MagicMirror™ offers a detailed evaluation across five critical aspects, each addressing a prevalent skin concern:\n{{concerns}}",
+    "image": "/images/magic-mirror/magic-mirror.image.png",
+    "conditions": [
+      {
+        "id": "high_cri",
+        "name": "High CRI",
+        "description": "Mirrors the natural daylight to truthfully reveal your skin condition."
+      },
+      {
+        "id": "parallel_polarization",
+        "name": "Parallel-Polarization",
+        "description": "Enhances skin texture and surface visibility, ideal for detecting concerns like ageing, altered keratinization, dry/oily skin, and wrinkles."
+      },
+      {
+        "id": "cross_polarization",
+        "name": "Cross-Polarization",
+        "description": "Emphasizes sub-surface features, expertly exposing the underlying issues like vasculature, pigmented lesions, and post-inflammatory hyperpigmentation."
+      },
+      {
+        "id": "uv_light",
+        "name": "UV Light",
+        "description": "Unveils the unseen by disclosing potential damage beneath the skin’s top layer, uncovering early signs of sun damage, porphyrin in acne, and pigment irregularities."
+      }
+    ],
+    "concerns": [
+      {
+        "id": "wrinkle_assesment",
+        "name": "Wrinkle Assessment",
+        "description": "A thorough investigation into skin ageing, offering precise measurements of wrinkle location, length, and thickness."
+      },
+      {
+        "id": "acne_analysis",
+        "name": "Acne Analysis",
+        "description": "A comprehensive overview of acne presence, including detailed metrics for blackheads and pimples, supported by a Post-Acne Hyperpigmentation Index (PAHI) assessment."
+      },
+      {
+        "id": "pigmentation_profiling",
+        "name": "Pigmentation Profiling",
+        "description": "An in-depth study of skin pigmentation, featuring location, area, and intensity metrics, along with a Melasma Area and Severity Index (MASI) assessment."
+      },
+      {
+        "id": "skin_tone_evaluation",
+        "name": "Skin Tone Evaluation",
+        "description": "A complete skin tone analysis based on the Fitzpatrick scale."
+      },
+      {
+        "id": "eye_circle_examination",
+        "name": "Eye Circle Examination",
+        "description": "A focused evaluation of under-eye health and appearance."
+      }
+    ],
+    "information": {
+      "message": "MagicMirror™ is currently undergoing its final stages of development. Our dedicated team is committed to perfecting this revolutionary skincare solution to the high standards you deserve. We appreciate your anticipation and patience during this phase. Stay tuned for updates - the unveiling of MagicMirror™ is just around the corner. Together, let's step into the next era of skincare."
+    }
+  }
+}
