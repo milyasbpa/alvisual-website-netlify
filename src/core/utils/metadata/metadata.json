@@ -1,0 +1,22 @@
+{
+  "home": {
+    "title": "Home",
+    "description": "Embrace the future of healthcare with Alvisual"
+  },
+  "teams": {
+    "title": "Team",
+    "description": "Meet our team at Alvisual"
+  },
+  "tricho_track": {
+    "title": "TrichoTrack",
+    "description": "Singapore’s 1st trichology AI"
+  },
+  "magic_mirror": {
+    "title": "MagicMirror",
+    "description": "Your personal portal to flawless skin"
+  },
+  "download": {
+    "title": "Download",
+    "description": "Download our product"
+  }
+}

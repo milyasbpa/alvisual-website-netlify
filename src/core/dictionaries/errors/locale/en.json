@@ -1,0 +1,7 @@
+{
+  "errors": {
+    "required": {
+      "message": "This input is required"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "alvisual": {
+    "title": "Quick Link",
+    "list": [
+      {
+        "id": "home",
+        "name": "Home",
+        "link": "#hero",
+        "type": "anchor",
+        "tag": "#hero"
+      },
+      {
+        "id": "about_us",
+        "name": "About Us",
+        "link": "#about-us",
+        "type": "anchor",
+        "tag": "#about-us"
+      },
+      {
+        "id": "products",
+        "name": "Products",
+        "link": "#products",
+        "type": "anchor",
+        "tag": "#products"
+      },
+      {
+        "id": "our_partners",
+        "name": "Our Partners",
+        "link": "#partners",
+        "type": "anchor",
+        "tag": "#partners"
+      },
+      {
+        "id": "contact_us",
+        "name": "Contact Us",
+        "link": "#contact-us",
+        "type": "anchor",
+        "tag": "#contact-us"
+      },
+      {
+        "id": "support",
+        "name": "Support",
+        "link": "/download",
+        "type": "link",
+        "tag": "#support"
+      }
+    ]
+  }
+}

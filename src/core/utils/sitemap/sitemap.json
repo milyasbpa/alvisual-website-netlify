@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "id": "home",
+      "url": ""
+    },
+    {
+      "id": "teams",
+      "url": "/teams"
+    },
+    {
+      "id": "magic_mirror",
+      "url": "/products/magic-mirror"
+    },
+    {
+      "id": "tricho_track",
+      "url": "/products/tricho-track"
+    }
+  ]
+}

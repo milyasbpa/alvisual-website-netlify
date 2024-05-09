@@ -1,0 +1,22 @@
+{
+  "alvisual": {
+    "title": "Contact",
+    "list": [
+      {
+        "id": "phone_number",
+        "icon": "/icons/contact/phone.icon.png",
+        "label": "+65 9860 4997"
+      },
+      {
+        "id": "email",
+        "icon": "/icons/contact/mail.icon.png",
+        "label": "contact@alvisual.com.sg"
+      },
+      {
+        "id": "address",
+        "icon": "/icons/contact/place.icon.png",
+        "label": "7 Jalan Kilang #04-01, Singapore 159407"
+      }
+    ]
+  }
+}
