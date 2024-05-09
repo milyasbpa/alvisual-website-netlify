@@ -5,6 +5,6 @@ export interface TeamsDictionariesStore {
   dict: TeamsFeatureDictionariesType;
 }
 
-export const useTeamsDictionaries = create<TeamsDictionariesStore>((set) => ({
+export const useTeamsDictionaries = create<TeamsDictionariesStore>(() => ({
   dict: {} as TeamsFeatureDictionariesType,
 }));
