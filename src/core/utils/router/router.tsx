@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
     element: <MagicMirrorPage />,
   },
   {
-    path: "/products/tricho-track",
+    path: "/products/trichotrack",
     element: <TrichoTrackPage />,
   },
   {

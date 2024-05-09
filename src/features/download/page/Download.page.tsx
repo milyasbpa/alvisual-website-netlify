@@ -7,6 +7,8 @@ import ContentDownload from "@/features/download/fragments/content/Content.downl
 import { useDownloadDictionaries } from "@/features/download/zustand/dictionaries/store";
 import DownloadFeatureDictionariesStoreInitializer from "@/features/download/zustand/dictionaries/initializer";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
+import Metadata from "@/core/utils/metadata/metadata.json";
 
 export default function DownloadPage() {
   useLocaleStore.setState({ locale: "en" });
@@ -17,6 +19,11 @@ export default function DownloadPage() {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>{Metadata.download.title}</title>
+        <meta name="description" content={Metadata.download.description} />
+        <link rel="canonical" href="/download" />
+      </Helmet>
       <DownloadFeatureDictionariesStoreInitializer dict={dict} />
       <PublicLayout>
         <BannerDownload />
