@@ -12,11 +12,15 @@ import ArchitectureTrichoTrack from "@/features/products/tricho_track/fragments/
 import TrichoTrackFeatureDictionariesStoreInitializer from "@/features/products/tricho_track/zustand/dictionaries/initializer";
 
 import VersionTrichoTrack from "@/features/products/tricho_track/fragments/version/Version.tricho_track";
+import { useEffect } from "react";
 
 export default function TrichoTrackPage() {
   useLocaleStore.setState({ locale: "en" });
   const dict = getTrichoTrackFeatureDictionaries("en");
   useTrichoTrackDictionaries.setState({ dict: dict });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <PublicLayout>
       <TrichoTrackFeatureDictionariesStoreInitializer dict={dict} />

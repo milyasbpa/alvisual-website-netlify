@@ -6,11 +6,16 @@ import ContentTeams from "@/features/teams/fragments/content/Content.teams";
 import { useTeamsDictionaries } from "@/features/teams/zustand/dictionaries/store";
 
 import TeamsFeatureDictionariesStoreInitializer from "@/features/teams/zustand/dictionaries/initializer";
+import { useEffect } from "react";
 
 export default function TeamsPage() {
   useLocaleStore.setState({ locale: "en" });
   const dict = getTeamsFeatureDictionaries("en");
   useTeamsDictionaries.setState({ dict: dict });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <PublicLayout>
       <TeamsFeatureDictionariesStoreInitializer dict={dict} />

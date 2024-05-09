@@ -1,0 +1,130 @@
+{
+  "banner": {
+    "image": "/images/download/background.image.jpg",
+    "alt": "download"
+  },
+  "breadcrumb": [
+    {
+      "id": "support",
+      "name": "Support",
+      "link": "/download",
+      "disabled": false
+    },
+    {
+      "id": "Download",
+      "name": "Download",
+      "link": "",
+      "disabled": true
+    }
+  ],
+  "download": {
+    "headline": "Download Drivers & Documents",
+    "drivers": {
+      "columns": [
+        {
+          "id": "driver",
+          "label": "Driver"
+        },
+        {
+          "id": "version",
+          "label": "Version"
+        },
+        {
+          "id": "os",
+          "label": "OS"
+        },
+        {
+          "id": "compatibility",
+          "label": "Compatibility"
+        },
+        {
+          "id": "release_date",
+          "label": "Release Date"
+        },
+        {
+          "id": "link",
+          "label": "Link"
+        }
+      ],
+      "data": [
+        {
+          "driver": "TrichoTrack Pro",
+          "version": "3.2.18",
+          "os": "Windows 10, 11",
+          "compatibility": "Dino-Lite Premier AM4113ZT,Dino-Lite WF-20 WF4115ZT,Dino-Lite Edge AF4115ZT,Plugable 60x-250x",
+          "release_date": "2023-10-06",
+          "link": "{{domain}}/files/TrichoTrackProInstaller.exe"
+        },
+        {
+          "driver": "TrichoTrack Lite",
+          "version": "3.2.29",
+          "os": "iPadOS 17",
+          "compatibility": "Plugable 60x-250x",
+          "release_date": "2024-02-23",
+          "link": ""
+        }
+      ]
+    },
+    "notes": {
+      "drivers": "Note: If your antivirus software or firewall is preventing the download of the installer file, please temporarily disable your antivirus or firewall software before attempting to download the installer file again."
+    },
+    "documents": {
+      "columns": [
+        {
+          "id": "document",
+          "label": "Document"
+        },
+        {
+          "id": "release_date",
+          "label": "Release Date"
+        },
+        {
+          "id": "link",
+          "label": "Link"
+        }
+      ],
+      "data": [
+        {
+          "document": "TrichoTrack Pro Installation Manual (English)",
+          "release_date": "2023-10-06",
+          "link": "{{domain}}/docs/trichotrack_pro/installation_manual_en.pdf"
+        },
+        {
+          "document": "TrichoTrack Pro Installation Manual (Simplified Chinese)",
+          "release_date": "2023-10-06",
+          "link": "{{domain}}/docs/trichotrack_pro/installation_manual_zh.pdf"
+        },
+        {
+          "document": "TrichoTrack Pro User Guide (English)",
+          "release_date": "2024-04-25",
+          "link": "{{domain}}/docs/trichotrack_pro/user_guide_en_2024_04_25.pdf"
+        },
+        {
+          "document": "TrichoTrack Pro User Guide (Simplified Chinese)",
+          "release_date": "2024-04-25",
+          "link": "{{domain}}/docs/trichotrack_pro/user_guide_zh_2024_04_25.pdf"
+        },
+        {
+          "document": "TrichoTrack Lite Installation Manual (English)",
+          "release_date": "2024-02-26",
+          "link": "{{domain}}/docs/trichotrack_lite/lite_installation_manual_en.pdf"
+        },
+        {
+          "document": "TrichoTrack Lite Installation Manual (Simplified Chinese)",
+          "release_date": "2024-02-26",
+          "link": "{{domain}}/docs/trichotrack_lite/lite_installation_manual_zh.pdf"
+        },
+        {
+          "document": "TrichoTrack Lite User Guide (English)",
+          "release_date": "2024-04-25",
+          "link": "{{domain}}/docs/trichotrack_lite/lite_user_guide_en_2024_04_25.pdf"
+        },
+        {
+          "document": "TrichoTrack Lite User Guide (Simplified Chinese)",
+          "release_date": "2024-04-25",
+          "link": "{{domain}}/docs/trichotrack_lite/lite_user_guide_zh_2024_04_25.pdf"
+        }
+      ]
+    }
+  }
+}

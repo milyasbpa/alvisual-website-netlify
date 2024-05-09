@@ -9,11 +9,15 @@ import ContentSection from "@/core/ui/components/content_section/ContentSection.
 import NavigationMagicMirror from "@/features/products/magic_mirror/fragments/navigation/Navigation.magic_mirror";
 import OverviewMagicMirror from "@/features/products/magic_mirror/fragments/overview/Overview.magic_mirror";
 import MagicMirrorFeatureDictionariesStoreInitializer from "@/features/products/magic_mirror/zustand/dictionaries/initializer";
+import { useEffect } from "react";
 
 export default function MagicMirrorPage() {
   useLocaleStore.setState({ locale: "en" });
   const dict = getMagicMirrorFeatureDictionaries("en");
   useMagicMirrorDictionaries.setState({ dict: dict });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <PublicLayout>
       <MagicMirrorFeatureDictionariesStoreInitializer dict={dict} />
